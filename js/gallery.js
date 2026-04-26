@@ -75,8 +75,7 @@ function handleClick(event){
     return;
    }
    console.log(event.target.alt);
-   console.log(images[0].description)
-   const myImg = images.find(({description}) => {description == event.target.alt});
+   const myImg = images.find(({description}) => description === event.target.alt);
 
    const instance = basicLightbox.create(`
 <div class="modal">
